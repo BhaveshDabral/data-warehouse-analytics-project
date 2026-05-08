@@ -59,28 +59,29 @@ The project follows a multi-layered architecture:
 ```bash
 data-warehouse-analytics-project/
 │
-├── datasets/                     
+├── datasets/
+│   │
+│   ├── source_crm/
+│   └── source_erp/
 │
 ├── scripts/
 │   │
-│   ├── bronze_layer/            
+│   ├── bronze_layer/
 │   │   ├── ddl_bronze_layer.sql
 │   │   └── procedure_bronze_layer.sql
 │   │
-│   ├── silver_layer/             
+│   ├── silver_layer/
 │   │   ├── ddl_silver_layer.sql
 │   │   ├── procedure_silver_layer.sql
-│   │   └── data_quality_checks.sql
 │   │
-│   ├── gold_layer/              
+│   ├── gold_layer/
 │   │   ├── ddl_gold_layer.sql
-│   │   ├── customer_report.sql
-│   │   ├── product_report.sql
-│   │   ├── eda_basic.sql
-│   │   └── eda_advanced.sql
+│   │
+│   ├── customer_report.sql
+│   ├── product_report.sql
+│   ├── eda_basic.sql
+│   └── eda_advanced.sql
 │
-├── init_database.sql            
-│
-├── README.md                    
-│
+├── init_database.sql
+├── README.md
 └── LICENSE
